@@ -24,18 +24,35 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="sidebar-wrapper">
-      <img src="images/logo.svg" alt="Maison Soleil Logo" />
-
+      <div class="image-wrapper">
+        <img src="images/logo.svg" alt="Maison Soleil Logo" />
+      </div>
       <!-- Guest navigation -->
-      <p>Your stay <span>1</span></p>
-      <p>The house</p>
-      <p>Around town</p>
-      <p>Breakfast</p>
-      <p>Messages</p>
+      <div class="nav-wrapper">
+        <p>
+          <img src="images/icon-bed.svg" alt="bed icon" />Your stay
+          <span class="circle">1</span>
+        </p>
+        <p><img src="images/icon-house.svg" alt="house icon" />The house</p>
+        <p><img src="images/icon-pin.svg" alt="pin icon" />Around town</p>
+        <p>
+          <img
+            src="images/icon-breakfast-outline.svg"
+            alt="breakfast icon"
+          />Breakfast
+        </p>
+        <p><img src="images/icon-mail.svg" alt="messages icon" />Messages</p>
+      </div>
 
       <!-- Local weather -->
       Today in Cassis 27° Sunny · light breeze Est. 1987 Maison Soleil · 12 Rue
