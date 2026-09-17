@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   color: hsl(32, 20%, 29%);
-  padding-bottom: 12rem;
+  padding-bottom: 10.7rem;
 }
 
 .nav-wrapper p {
@@ -114,4 +114,34 @@ body {
 
 .main-wrapper {
   margin-left: 325px;
+}
+
+.main-header {
+  border: 1px solid;
+  /* delete above   */
+}
+
+.receipt-card {
+  border: 1px solid;
+  /* delete above   */
+}
+
+.host-card {
+  border: 1px solid;
+  /* delete above   */
+}
+
+.arrival-card {
+  border: 1px solid;
+  /* delete above   */
+}
+
+.wifi-card {
+  border: 1px solid;
+  /* delete above   */
+}
+
+.breakfast-card {
+  border: 1px solid;
+  /* delete above   */
 }
