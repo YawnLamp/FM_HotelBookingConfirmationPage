@@ -38,11 +38,14 @@ body {
   flex-direction: column;
   font-family: "DM Sans", sans-serif;
   color: hsl(32, 20%, 29%);
+  padding-bottom: 12rem;
 }
 
 .nav-wrapper p {
   display: flex;
-  gap: 5px;
+  gap: 4px;
+  padding-inline: 3px;
+  padding-block: 3px;
 }
 
 .circle {
@@ -59,7 +62,54 @@ body {
   background-color: hsl(0, 0%, 100%);
   border: none;
   border-radius: 15px;
-  padding: 0.5rem;
+}
+
+.weather-card {
+  background-image: linear-gradient(
+    to right,
+    hsl(44, 84%, 75%),
+    hsl(45, 100%, 74%)
+  );
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-height: 140px;
+  border-radius: 15px;
+  .weather-text {
+    padding-left: 1rem;
+    min-width: 15ch;
+    max-height: 120px;
+  }
+  img {
+    width: 100px;
+    height: auto;
+    padding-left: 3rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.weather-text:nth-child(1) {
+  font-family: "Fraunces", serif;
+  font-weight: 300;
+  line-height: 0.65;
+}
+
+.weather-text h2 {
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 0.65;
+}
+
+.wether-textt:nth-child(3) {
+  font-size: smaller;
+  line-height: 0.65;
+}
+
+.sidebar-footer {
+  font-family: "DM Mono", monospace;
+  text-transform: uppercase;
+  font-size: 75%;
+  color: hsl(33, 17%, 41%);
 }
 
 .main-wrapper {
