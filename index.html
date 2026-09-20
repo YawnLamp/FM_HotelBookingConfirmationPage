@@ -72,48 +72,95 @@
 
     <div class="main-wrapper">
       <div class="main-header">
-        <p>Booking · Confirmed</p>
-        <h1>Bienvenue, <i>Lucia.</i></h1>
-        <button>Print receipt</button> <button>Add to calendar</button>
+        <div class="header-text">
+          <p>Booking · Confirmed</p>
+          <h1>Bienvenue, <i>Lucia.</i></h1>
+        </div>
+        <div class="header-buttons">
+          <p>Print receipt</p>
+          <p>Add to calendar</p>
+        </div>
       </div>
       <!-- Booking cards start -->
 
       <!-- Receipt card -->
-      <div class="receipt-card">
-        Receipt № MS-2026 0421-AH Your stay Check in 25 Apr Saturday · 15:00
-        Check out 29 Apr Wednesday · 11:00 Room · La Garrigue · 4 nights €
-        620.00 Breakfast · 2 guests € 96.00 Tourist tax € 14.40 Total paid €
-        730.40 Paid · Wise · GBP
-        <img src="images/icon-barcode.svg" alt="barcode" />
-      </div>
+      <div class="hero-cards">
+        <div class="receipt-card">
+          <div class="receipt-rowOne">
+            <span
+              ><p class="receipt">Receipt</p>
+              <p><b>Your stay</b></p></span
+            >
+            <span class="receipt-nums"
+              ><p>№ MS-2026</p>
+              <p>0421-AH</p></span
+            >
+          </div>
+          <div class="receipt-rowTwo">
+            <span
+              ><p>CHECK IN</p>
+              <p><b>25 Apr</b></p>
+              <p>Saturday · 15:00</p></span
+            ><span
+              ><p>CHECK OUT</p>
+              <p><b>29 Apr</b></p>
+              <p>Wednesday · 11:00</p></span
+            >
+          </div>
+          <div class="receipt-rowThree">
+            <div class="rowThree-left">
+              <p>Room · La Garrigue · 4 nights</p>
+              <p>Breakfast · 2 guests</p>
+              <p>Tourist tax</p>
+            </div>
+            <div class="rowThree-right">
+              <p>€ 620.00</p>
+              <p>€ 96.00</p>
+              <p>€ 14.40</p>
+            </div>
+          </div>
+          <div class="receipt-rowFour">
+            <div class="rowFour-left">
+              <p>TOTAL PAID</p>
+              <p>Paid · Wise · GBP</p>
+            </div>
+            <div class="rowFour-right">
+              <p>€ 730.40</p>
+              <img src="images/icon-barcode.svg" alt="barcode" />
+            </div>
+          </div>
+        </div>
 
-      <!-- Note from host card -->
-      <div class="host-card">
-        Welcome A note from your host, Margaux. We're so glad you're coming. The
-        shutters will be open, the lemonade cold, and the cat - Poivre -
-        pretending not to notice you. Room La Garrigue
-      </div>
+        <!-- Note from host card -->
 
+        <div class="host-card">
+          Welcome A note from your host, Margaux. We're so glad you're coming.
+          The shutters will be open, the lemonade cold, and the cat - Poivre -
+          pretending not to notice you. Room La Garrigue
+        </div>
+      </div>
       <!-- Booking cards end -->
 
       <!-- Guest info row starts -->
 
       <!-- Arrival -->
-      <div class="arrival-card">
-        Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by the
-        blue door. If we're at the market, the key is in the terracotta pot by
-        the olive tree.
-      </div>
-      <!-- Wifi -->
-      <div class="wifi-card">
-        Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest
-        Password soleil-2026 Copy
-      </div>
-      <!-- Breakfast -->
-      <div class="breakfast-card">
-        Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille
-        honey, pain au levain, and espresso. Gluten-free option? Leave a note
-        the night before.
+      <div class="footer-cards">
+        <div class="arrival-card">
+          Arrival 01 Check-in from 15:00 Sat, 25 April Ring the brass bell by
+          the blue door. If we're at the market, the key is in the terracotta
+          pot by the olive tree.
+        </div>
+        <!-- Wifi -->
+        <div class="wifi-card">
+          Wifi 02 Le Soleil · Guest Password below Network Le Soleil · Guest
+          Password soleil-2026 Copy
+        </div>
+        <!-- Breakfast -->
+        <div class="breakfast-card">
+          Breakfast 03 Served 8 - 10:30 On the terrace Fresh figs, Marseille
+          honey, pain au levain, and espresso. Gluten-free option? Leave a note
+          the night before.
+        </div>
       </div>
       <!-- Guest info row ends -->
     </div>

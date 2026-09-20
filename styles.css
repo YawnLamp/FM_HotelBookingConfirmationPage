@@ -114,16 +114,164 @@ body {
 
 .main-wrapper {
   margin-left: 325px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .main-header {
   border: 1px solid;
   /* delete above   */
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  display: flex;
+  align-items: baseline;
+  gap: 500px;
+  padding: 1.25rem;
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 500;
+  }
+  i {
+    color: hsl(18, 62%, 47%);
+  }
+  .header-text {
+    line-height: 0.65;
+    p {
+      font-family: "DM Mono", monospace;
+      color: hsl(33, 17%, 41%);
+      text-transform: capitalize;
+    }
+  }
+  .header-buttons {
+    display: flex;
+    gap: 7px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+
+    :nth-of-type(1) {
+      border: 2px solid hsl(36, 22%, 86%);
+      border-radius: 25px;
+      padding: 0.6rem;
+    }
+    :nth-of-type(2) {
+      border-radius: 25px;
+      padding: 0.6rem;
+      background-color: hsl(33, 15%, 15%);
+      color: hsl(0, 0%, 100%);
+    }
+  }
+}
+
+.hero-cards {
+  display: flex;
+  gap: 50px;
+  padding-left: 7rem;
 }
 
 .receipt-card {
-  border: 1px solid;
-  /* delete above   */
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px 4px hsl(30, 24%, 93%);
+  padding: 1.2rem;
+  background-color: hsl(40, 60%, 98%);
+  min-inline-size: 360px;
+  .receipt-rowOne {
+    display: flex;
+    line-height: 0.45;
+    gap: 170px;
+    font-family: "DM Mono", monospace;
+    color: hsl(33, 17%, 41%);
+    padding-bottom: 0.75rem;
+    .receipt {
+      text-transform: uppercase;
+      font-size: 75%;
+    }
+    b {
+      color: hsl(33, 15%, 15%);
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: 130%;
+    }
+    .receipt-nums {
+      line-height: 0.35;
+      text-align: end;
+    }
+  }
+  .receipt-rowTwo {
+    display: flex;
+    gap: 65px;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    padding-bottom: 1rem;
+    line-height: 0.65;
+    border-top: 2px dashed hsl(36, 22%, 86%);
+    span {
+      text-align: center;
+      font-weight: 300;
+    }
+    p {
+      font-family: "DM Mono", monospace;
+      color: hsl(33, 17%, 41%);
+      font-size: 0.75em;
+      font-weight: 400;
+    }
+    p b {
+      font-family: "Fraunces", serif;
+      font-size: 3em;
+      color: hsl(33, 15%, 15%);
+      font-weight: 400;
+    }
+  }
+  .receipt-rowThree {
+    display: flex;
+    line-height: 0.85;
+    gap: 75px;
+    font-family: "DM Mono", monospace;
+    font-size: 0.75em;
+    color: hsl(33, 15%, 15%);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    border-top: 2px dashed hsl(36, 22%, 86%);
+    border-bottom: 2px solid hsl(33, 15%, 15%);
+
+    .rowThree-right {
+      text-align: end;
+    }
+  }
+  .receipt-rowFour {
+    display: flex;
+    gap: 120px;
+    .rowFour-left {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+      gap: 15px;
+      font-family: "DM Mono", monospace;
+      color: hsl(33, 17%, 41%);
+      font-size: 0.75em;
+    }
+    .rowFour-right {
+      text-align: end;
+      font-size: 1.5em;
+      font-family: "Fraunces", serif;
+      margin: 0;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.footer-cards {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
 }
 
 .host-card {
