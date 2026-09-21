@@ -119,9 +119,8 @@ body {
   gap: 10px;
 }
 
+/* add hover to header buttons! */
 .main-header {
-  border: 1px solid;
-  /* delete above   */
   grid-column-start: 1;
   grid-column-end: span 2;
   display: flex;
@@ -166,7 +165,7 @@ body {
 
 .hero-cards {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   padding-left: 7rem;
 }
 
@@ -266,17 +265,66 @@ body {
   }
 }
 
+.host-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  background-image: linear-gradient(
+    to top right,
+    hsl(15, 74%, 41%),
+    hsl(18, 62%, 47%),
+    hsl(22, 72%, 56%)
+  );
+  border-radius: 10px;
+  box-shadow: 3px 3px 1px 4px hsl(30, 24%, 93%);
+  .host-rowOne {
+    font-size: 0.65em;
+    font-family: "DM Mono", monospace;
+    color: hsl(35, 60%, 96%);
+    min-inline-size: 55ch;
+    display: flex;
+    gap: 260px;
+    border-top: 1px dashed hsl(22, 72%, 56%);
+    padding-bottom: 1rem;
+  }
+  .host-rowTwo {
+    font-family: "Fraunces", serif;
+    line-height: 0.65;
+    p {
+      color: hsl(45, 100%, 76%);
+    }
+    h1 {
+      color: hsl(35, 60%, 96%);
+      font-weight: 400;
+    }
+  }
+  .host-rowThree {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-size: 0.75em;
+    color: hsl(35, 60%, 96%);
+    min-inline-size: 55ch;
+    line-height: 1.4;
+  }
+  .host-rowFour {
+    padding-top: 7.5rem;
+    color: hsl(35, 60%, 96%);
+    line-height: 0.45;
+    .host-four-one {
+      font-size: 0.65em;
+    }
+    .host-four-two {
+      font-size: 1.3em;
+    }
+  }
+}
+
 .footer-cards {
   grid-column-start: 1;
   grid-column-end: span 2;
   display: flex;
   justify-content: space-evenly;
   gap: 10px;
-}
-
-.host-card {
-  border: 1px solid;
-  /* delete above   */
 }
 
 .arrival-card {
