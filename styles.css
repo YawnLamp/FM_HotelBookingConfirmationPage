@@ -126,7 +126,7 @@ body {
   display: flex;
   align-items: baseline;
   gap: 500px;
-  padding: 1.25rem;
+  padding: 1rem;
   h1 {
     font-family: "Fraunces", serif;
     font-weight: 500;
@@ -166,7 +166,7 @@ body {
 .hero-cards {
   display: flex;
   gap: 30px;
-  padding-left: 7rem;
+  padding-left: 5.5rem;
 }
 
 .receipt-card {
@@ -174,7 +174,7 @@ body {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 3px 3px 1px 4px hsl(30, 24%, 93%);
-  padding: 1.2rem;
+  padding: 1rem;
   background-color: hsl(40, 60%, 98%);
   min-inline-size: 360px;
   .receipt-rowOne {
@@ -202,9 +202,9 @@ body {
   .receipt-rowTwo {
     display: flex;
     gap: 65px;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     padding-left: 1.2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     line-height: 0.65;
     border-top: 2px dashed hsl(36, 22%, 86%);
     span {
@@ -268,7 +268,7 @@ body {
 .host-card {
   display: flex;
   flex-direction: column;
-  padding: 1.2rem;
+  padding: 1rem;
   background-image: linear-gradient(
     to top right,
     hsl(15, 74%, 41%),
@@ -292,10 +292,12 @@ body {
     line-height: 0.65;
     p {
       color: hsl(45, 100%, 76%);
+      font-size: 1.2em;
     }
     h1 {
       color: hsl(35, 60%, 96%);
       font-weight: 400;
+      font-size: 2.7em;
     }
   }
   .host-rowThree {
@@ -307,7 +309,7 @@ body {
     line-height: 1.4;
   }
   .host-rowFour {
-    padding-top: 7.5rem;
+    padding-top: 4.6rem;
     color: hsl(35, 60%, 96%);
     line-height: 0.45;
     .host-four-one {
@@ -328,16 +330,161 @@ body {
 }
 
 .arrival-card {
-  border: 1px solid;
-  /* delete above   */
+  padding: 0.75rem;
+  background-color: hsl(40, 60%, 98%);
+  border: 2px solid hsl(30, 24%, 93%);
+  border-radius: 15px;
+  .arrival-rowOne {
+    display: flex;
+    color: hsl(15, 69%, 37%);
+    gap: 155px;
+    font-family: "DM Sans", sans-serif;
+    .arrival-one-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+      font-size: 0.75em;
+    }
+    img {
+      background-color: hsl(15, 69%, 37%);
+      padding: 5px;
+      border-radius: 5px;
+      width: 22px;
+      height: 22px;
+    }
+    .arrival-one-right {
+      padding-top: 0.5rem;
+      font-family: "Fraunces", serif;
+      font-size: 1.5em;
+    }
+  }
+  .arrival-rowTwo {
+    line-height: 0.35;
+    h3 {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+    p {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.7em;
+      color: hsl(33, 17%, 41%);
+    }
+  }
+  .arrival-rowThree {
+    font-family: "DM Sans", sans-serif;
+    color: hsl(33, 17%, 41%);
+    font-size: 0.8em;
+  }
 }
 
 .wifi-card {
-  border: 1px solid;
-  /* delete above   */
+  border: 2px solid hsl(30, 24%, 93%);
+  background-color: hsl(40, 60%, 98%);
+  padding: 0.75rem;
+  border-radius: 15px;
+  .wifi-rowOne {
+    display: flex;
+    color: hsl(230, 49%, 56%);
+    gap: 155px;
+    font-family: "DM Sans", sans-serif;
+    .wifi-one-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+      font-size: 0.75em;
+    }
+    img {
+      background-color: hsl(230, 49%, 56%);
+      padding: 5px;
+      border-radius: 5px;
+      width: 22px;
+      height: 22px;
+    }
+    .wifi-one-right {
+      padding-top: 0.5rem;
+      font-family: "Fraunces", serif;
+      font-size: 1.5em;
+    }
+  }
+  .wifi-rowTwo {
+    line-height: 0.35;
+    h3 {
+      font-family: "Fraunces", serif;
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+    p {
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.7em;
+      color: hsl(33, 17%, 41%);
+    }
+  }
+  .wifi-rowThree {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    gap: 4px;
+    .network-line {
+      display: flex;
+      background-color: hsl(36, 22%, 86%);
+      border-radius: 5px;
+      align-items: center;
+      padding: 0.35rem;
+      gap: 85px;
+      .network-left {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.7em;
+        color: hsl(33, 17%, 41%);
+        font-weight: 600;
+      }
+      .network-right {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.7em;
+        color: hsl(33, 15%, 15%);
+        font-weight: 500;
+      }
+    }
+    .password-line {
+      display: flex;
+      background-color: hsl(36, 22%, 86%);
+      border-radius: 5px;
+      align-items: center;
+      padding: 0.35rem;
+      gap: 70px;
+      .password-left {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.7em;
+        color: hsl(33, 17%, 41%);
+        font-weight: 600;
+      }
+      .password-right {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.7em;
+        color: hsl(33, 15%, 15%);
+        font-weight: 500;
+        .copy-button {
+          font-size: 0.6em;
+          color: hsl(33, 17%, 41%);
+          border: 1px solid hsl(33, 17%, 41%);
+          border-radius: 8px;
+          padding: 2px 5px;
+        }
+        .copy-button:hover {
+          border: 2px solid hsl(15, 69%, 37%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .breakfast-card {
   border: 1px solid;
   /* delete above   */
+  background-color: hsl(40, 60%, 98%);
 }
